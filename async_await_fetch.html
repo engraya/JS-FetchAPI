@@ -9,7 +9,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand m-3 align-center" href="#">Fetch API</a>
@@ -23,9 +23,26 @@
 
         </div>
     </nav>
-
-    <div id="division"></div>
-
+    
+    <div class="container p-5 active" style="display: flex; justify-content:center">
+        <button id="btn" class="btn btn-lg" style="border: 5px; background:rgb(23, 126, 126)">Get Users with Traditional Fetch Function</button>
+    </div>
+    <hr>
+    <div class="container p-5 active" style="display: flex; justify-content:center">
+        <button id="btn2" class="btn btn-lg" style="border: 5px; background:rgb(53, 166, 231)">GET Users Data with Async Await Fetch Function</button>
+    </div>
+    <hr>    
+    <div class="container p-5 active" style="display: flex; justify-content:center">
+        <button id="btn3" class="btn btn-lg" style="border: 5px; background:rgb(9, 124, 15)">POST Users Data with Async Await Fetch Function</button>
+    </div>
+    <hr>
+    <div class="container p-5 active" style="display: flex; justify-content:center">
+        <button id="btn4" class="btn btn-lg" style="border: 5px; background:rgb(159, 161, 8)">PUT Update Users Data with Async Await Fetch Function</button>
+    </div>
+    <hr>    
+    <div class="container p-5 active" style="display: flex; justify-content:center">
+        <button id="btn5" class="btn btn-lg" style="border: 5px; background:rgb(194, 43, 23)">DELETE Users Data  with Async Await Fetch Function</button>
+    </div>
 
     <script src="async_await_fetch.js"></script>
 </body>

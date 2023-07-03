@@ -89,11 +89,7 @@ const userDELETE = {
 }
 
 fetch("https://reqres.in/api/users/10", {
-    method : 'DELETE',
-    headers : {
-        'Content-Type' : 'application/json'
-    },
-    body : JSON.stringify(newUserPUT)
+    method : 'DELETE'
 })
 .then(response => {
     const goodResponse = response.ok;
