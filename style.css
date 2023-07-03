@@ -1,0 +1,9 @@
+.mainSec{
+    background-color: cadetblue;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#pic{
+    border-radius: 50%;
+}
