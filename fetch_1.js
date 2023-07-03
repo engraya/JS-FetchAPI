@@ -1,13 +1,15 @@
 // GET ALL USER DATA AND INFO
 function fetchUserData() {
-    fetch("https://reqres.in/api/users").then(Response => {
+    fetch("https://reqres.in/api/users")
+    .then(Response => {
         const statusResponse = Response.ok;
         console.log(Response)
         if(!statusResponse) {
             throw Error("Please Try again Later with good Request Credentials!....")
         } 
         return Response.json()
-    }).then(outputResult => {
+    })
+    .then(outputResult => {
         console.log(outputResult.data);
         const html = outputResult.data.map(user => {
             return `
@@ -24,7 +26,8 @@ function fetchUserData() {
  
         // inject the Data into the front HTML Page
         document.getElementById("division").insertAdjacentHTML("afterbegin", html);
-    }).catch(error => {
+    })
+    .catch(error => {
         console.log(error)
     })
 }
@@ -50,11 +53,16 @@ function postUserData() {
             throw Error("Please Try again Later with good Request Credentials!....")
         } 
         return Response.json()
-    }).then(outputResult => {
+    })
+    .then(outputResult => {
         console.log(outputResult.data);
-    }).catch(error => {
+    })
+    .catch(error => {
         console.log(error)
     })
 }
 
 postUserData();
+
+
+
