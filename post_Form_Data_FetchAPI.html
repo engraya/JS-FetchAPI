@@ -18,28 +18,31 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">Using Async and Await => _______Fetch data from Form and Send to Server as JSON<span class="visually-hidden"></span></a>
+                    <a class="nav-link active" href="#" aria-current="page">POST Form DATA as JSON with Fetch API => _______Fetch data from Form and Send to Server as JSON<span class="visually-hidden"></span></a>
                 </li>
 
         </div>
     </nav>
 
     <div class="container md-5 p-lg-4" style="display: flex; justify-content:center">
-        <form class="row g-3 needs-validation" novalidate>
-          <div class="col-md-5">
-            <label for="validationCustom02" class="form-label">URL Parameter</label>
-            <input type="text" class="form-control" id="validationCustom02" id="formInput">
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+
+
+        <form class="form" id="myForm">
+          <div class="col-md-5 col-5">
+            <label for="validationCustom02" class="form-label">Enter Details</label>
+            <input name="username" type="text" placeholder="Enter Username"><br>
+            <input name="password" type="password" placeholder="Enter Password" >
+            <input name="termsconditions" type="checkbox" >
           </div>
           <div class="col-12">
-            <button id="button" class="btn btn-primary" type="submit">Fetch Data</button>
+            <button class="btn btn-primary" type="submit">Submit Data</button>
           </div>
         </form>
     </div>
 
 
-    <script src="form_input_fetchAPI.js"></script>
+    <script src="post_Form_Data_FetchAPI.js">
+
+    </script>
 </body>
 </html>
