@@ -33,7 +33,7 @@ formElement2.addEventListener("submit", event => {
 
     const newURLdata = new URLSearchParams(formData);
 
-    console.log(dataObject);
+    console.log(newURLdata);
 
     fetch("https://reqres.in/api/users", {
         method: 'POST',
